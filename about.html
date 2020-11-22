@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel = "stylesheet"
+    type = "text/css"
+    href = "about.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Products of our PRO LINE company</h1>
+    </div>
+    <div class="projects-video">
+        <div>
+        <h3 class="first-font">M&S Food</h3>
+        <button onclick="autoplay()" type="button">Autoplay</button> 
+  <button onclick="controls()">Controls</button>
+  <button onclick="loop()">Loop</button>
+  <button onclick="mute()">Mute</button>
+  <br><br>
+  <video id="video1"  width="200" height="200" controls autoplay loop muted>
+      <!-- autoplay and loop not working -->
+    <source src="./video/advertisement.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div>
+  <div id="audio">
+    <audio controls>
+        <source src="./video/Sub Urban - Cradles.ogg" type="audio/ogg">
+        <source src="./video/Sub Urban - Cradles.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+  </div>
+  <div class="youtube-video">
+    <h3 class="first-font">NIKE</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WA4dDs0T7sM?autoplay=1&controls=1&loop=1">
+        <!-- autoplay and loop not working -->
+    </iframe>
+</div>
+    </div>
+    <hr>
+    <div>
+        <object width="100%" height="300px" data="sponsors.html"></object>
+    </div>
+    <hr>
+    <div id="logo-div">
+<h1>Logo of our company</h1>
+<embed class="emb" src="./images/logo.png">
+    </div>
+    <script>
+          var myVideo = document.getElementById("video1"); 
+  function autoplay() { 
+      //not working
+    if (myVideo.autoplay) {
+      myVideo.autoplay=false; 
+      myVideo.load();
+    }
+    else  {
+      myVideo.autoplay = true;
+      myVideo.load();
+  }
+  } 
+  
+  function controls() { 
+      if(myVideo.controls == true) {
+          myVideo.controls = false;
+      }
+      else {
+          myVideo.controls = true;
+      }
+  } 
+  
+  function loop() { 
+      //not working
+      if(myVideo.loop) {
+          myVideo.loop == false;
+          myVideo.load();
+      }
+      else {
+          myVideo.loop = true;
+          myVideo.load();
+      }
+  } 
+  
+  function mute() { 
+      if(myVideo.muted == true) {
+          myVideo.muted=false;
+      }
+      else {
+          myVideo.muted = true;
+      }
+  } 
+    </script>
+</body>
+</html>

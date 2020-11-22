@@ -1,0 +1,18 @@
+@colors: #ed5565, #a0d468, #f6bb42, #5d9cec;
+@names: error, success, attention, info;
+@length: length(@colors);
+
+.h3-variation(@names; @colors; @index)
+  when
+  (iscolor(extract(@colors, @index)))
+  and
+  (@index > 0) {
+  .h3-variation(@names; @colors; (@index - 1)); // decrement.
+
+  @name: extract(@names, @index);
+  @color: extract(@colors, @index);
+  .h3-@{name} {
+    color: darken(@color, 30%);
+  }
+}
+.h3-variation(@names; @colors; @length);

@@ -1,0 +1,82 @@
+.emb {
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.projects-video {
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.first-font {
+  color: black;
+  font-size: 30px;
+}
+#audio {
+  margin-left: 50px;
+  margin-top: 200px;
+}
+.youtube-video {
+  margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+  .projects-video {
+    padding-left: 20px;
+    flex-direction: column;
+  }
+  #audio {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .youtube-video {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  iframe {
+    width: 90%;
+    margin-left: 0;
+    padding-left: 0px;
+  }
+  object {
+    width: 100%;
+  }
+  embed {
+    width: 100%;
+  }
+  #logo-div {
+    width: 100%;
+  }
+  .title {
+    font-size: 15px;
+  }
+  hr {
+    display: none;
+  }
+  audio {
+    width: 250px;
+  }
+  #emb {
+    width: 100%;
+  }
+}
