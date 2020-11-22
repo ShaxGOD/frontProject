@@ -23,7 +23,6 @@
   <button onclick="mute()">Mute</button>
   <br><br>
   <video id="video1"  width="200" height="200" controls autoplay loop muted>
-      <!-- autoplay and loop not working -->
     <source src="./video/advertisement.mp4" type="video/mp4">
     Your browser does not support HTML video.
   </video>
@@ -38,7 +37,6 @@
   <div class="youtube-video">
     <h3 class="first-font">NIKE</h3>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/WA4dDs0T7sM?autoplay=1&controls=1&loop=1">
-        <!-- autoplay and loop not working -->
     </iframe>
 </div>
     </div>
@@ -54,7 +52,6 @@
     <script>
           var myVideo = document.getElementById("video1"); 
   function autoplay() { 
-      //not working
     if (myVideo.autoplay) {
       myVideo.autoplay=false; 
       myVideo.load();
@@ -75,7 +72,6 @@
   } 
   
   function loop() { 
-      //not working
       if(myVideo.loop) {
           myVideo.loop == false;
           myVideo.load();
