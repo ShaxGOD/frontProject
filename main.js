@@ -61,4 +61,56 @@ missionButton.addEventListener('click', function(){
       x.className = "topnav";
     }
   }
-  
+//Yandex Map
+    ymaps.ready(init);
+    function init(){ 
+      var myMap = new ymaps.Map("map", {
+        center: [43.223982, 76.955514],
+        zoom: 14
+    }, {
+        searchControlProvider: 'yandex#search'
+    }),
+
+    myGeoObject = new ymaps.GeoObject({
+        geometry: {
+            type: "Point",
+            coordinates: [43.223982, 76.955514]
+        },
+        properties: {
+            hintContent: 'ProLine studio'
+        }
+    }),
+    myRectangle = new ymaps.Rectangle([
+      [43.226067, 76.954825],
+      [43.222226, 76.959986]
+  ], {
+      hintContent: 'Buildings of ProLine holding',
+      balloonContent: 'ProLine holding area'
+  }, {
+      fillColor: '#7df9ff33',
+      fillOpacity: 0.5,
+      strokeColor: '#0000FF',
+      strokeOpacity: 0.5,
+      strokeWidth: 2,
+      borderRadius: 6
+  });
+  var myPolyline = new ymaps.Polyline([
+    // Указываем координаты вершин ломаной.
+    [43.219093,76.955568],
+    [43.219002, 76.960254],
+    [43.215595, 76.958502],
+    [43.215699, 76.954157],
+    [43.219093,76.955568]
+], {
+    balloonContent: "Our Removable platform"
+}, {
+    balloonCloseButton: false,
+    strokeColor: "#000000",
+    strokeWidth: 4,
+    strokeOpacity: 0.5
+});
+    myMap.geoObjects
+    .add(myGeoObject)
+    .add(myRectangle)
+    .add(myPolyline)
+    }

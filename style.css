@@ -387,6 +387,17 @@ input[type="submit"]:hover {
 .topnav .icon {
   display: none;
 }
+.mapTitle {
+  height: 50px;
+  background-color: rgb(77, 233, 233);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#map {
+  width: 100%;
+  height: 500px;
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
