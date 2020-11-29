@@ -364,6 +364,7 @@ input[type="submit"]:hover {
   border-top-color: rgb(0, 0, 0);
   border-bottom-color: rgb(0, 0, 0);
   margin-bottom: 7px;
+  background-color: rgb(190, 177, 177);
 }
 .topnav a {
   display: inline-block;
@@ -398,7 +399,15 @@ input[type="submit"]:hover {
   width: 100%;
   height: 500px;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.sticky + .content {
+  padding-top: 60px;
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;

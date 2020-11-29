@@ -95,7 +95,6 @@ missionButton.addEventListener('click', function(){
       borderRadius: 6
   });
   var myPolyline = new ymaps.Polyline([
-    // Указываем координаты вершин ломаной.
     [43.219093,76.955568],
     [43.219002, 76.960254],
     [43.215595, 76.958502],
@@ -113,4 +112,16 @@ missionButton.addEventListener('click', function(){
     .add(myGeoObject)
     .add(myRectangle)
     .add(myPolyline)
+    }
+    window.onscroll = function() {navFunction()};
+
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+    
+    function navFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
     }
