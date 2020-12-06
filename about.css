@@ -1,5 +1,14 @@
-.emb {
-  width: 100%;
+.first-title {
+  color: black;
+  font-size: 30px;
+}
+.second-title {
+  color: black;
+  font-size: 30px;
+}
+#back {
+  width: 50px;
+  height: 50px;
 }
 body {
   margin: 0;
@@ -24,10 +33,6 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.first-font {
-  color: black;
-  font-size: 30px;
-}
 #audio {
   margin-left: 50px;
   margin-top: 200px;
@@ -40,8 +45,13 @@ body {
     width: 100%;
   }
   .projects-video {
-    padding-left: 20px;
+    width: 90%;
+    padding-left: 10px;
     flex-direction: column;
+    margin-top: 0px;
+  }
+  #video1 {
+    width: 100%;
   }
   #audio {
     margin-left: 0px;
@@ -49,34 +59,16 @@ body {
     width: 100%;
   }
   .youtube-video {
-    width: 100%;
+    width: 90%;
     margin-left: 0px;
     padding-left: 0px;
   }
   iframe {
     width: 90%;
-    margin-left: 0;
+    margin-left: 0px;
     padding-left: 0px;
-  }
-  object {
-    width: 100%;
-  }
-  embed {
-    width: 100%;
-  }
-  #logo-div {
-    width: 100%;
-  }
-  .title {
-    font-size: 15px;
-  }
-  hr {
-    display: none;
   }
   audio {
     width: 250px;
-  }
-  #emb {
-    width: 100%;
   }
 }

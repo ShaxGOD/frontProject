@@ -7,6 +7,9 @@
     <link rel = "stylesheet"
    type = "text/css"
    href = "style.css" />
+   <link rel = "stylesheet"
+   type = "text/css"
+   href = "myStyle.css" />
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,11 +23,11 @@
         <img src = "images/logo.png" id="logo"/>
     </div>
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">Features</a>
-        <a href="#contact">Activities</a>
-        <a href="#about">Company</a>
-        <a href = "#">Contact</a>
+        <a href="#home" class="active" onmouseover = "changeBackground(this)" onmouseout="removeBackground(this)">Home</a>
+        <a href="#features" onmouseover = "changeBackground(this)" onmouseout="removeBackground(this)">Features</a>
+        <a href="#textOfActivity" onmouseover = "changeBackground(this)" onmouseout="removeBackground(this)">Activities</a>
+        <a href="#if" onmouseover = "changeBackground(this)" onmouseout="removeBackground(this)">Company</a>
+        <a href = "#contactus" onmouseover = "changeBackground(this)" onmouseout="removeBackground(this)">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -33,41 +36,39 @@
     </div>
         <div class="bg-container">
             <div class= "bg-text">
-                <h1>Pro Line Video</h1>
-                <p>The video background has a parallax effect.
-                   
-                </p>
-                <p> This is fluid and full-width.</p>
+                <h1><b>Pro Line Video</b></h1>
+                <p><strong>We help Product Marketers make story-driven videos</strong></p>
+                <p> A VIDEO AGENCY IN ORANGE COUNTY, SERVING BRANDS AROUND THE WORLD</p>
             </div>
         </div>
 <div class="mainBody">
-    <div class="mainBodyFirst">
+    <div class="mainBodyFirst" id="features">
         <div class="title">
             <img src="images/tool.png" alt="yakor" style="width: 80px; height:80px;"/>
-            <p class="titleText">Cras pretium diam ut metus</p>
+            <p class="titleText">Video production</p>
         </div>
         <div class="textFirst">
-            <p style="margin-top:50px;">Pro Line HTML5 Template is brought to you by Tooplate. This layout used Bootstrap v4.1.3 UI kit. 
-                You can easily modify  this template in any HTML editor  for your site.
+            <p style="margin-top:50px;">
+                Your brand is who you are - Brand Video Production is your elevator pitch. It's your brand's heartbeat distilled in a short, yet powerful
+                 message that grabs attention and invokes action. The video's message and style will vary. 
             </p>
             <p style="margin-top:40px;">
-                Sed interdum, purus vulputate congue luctus, lorem massa dignissim nisi, sed condimentum nibh lorem quis
-                lorem. Nulla sed erat  dignissim, tincidunt ante ac, egestas turpis.
+                Whether you need to build trust, recruit, or sell, brand video production is an essential tool in your arsenal. These videos are for you to put your real personality and vision at the forefront of everything else. 
             </p>
         </div>
     </div>
     <div class="mainBodySecond">
         <div class="title" ">
             <img src="images/flower.png"  style="width: 80px; height:80px;"/>
-            <p class="titleText">Cras pretium diam ut metus</p>
+            <p class="titleText">Experimential marketing</p>
         </div>
         <div class="textFirst">
-            <p style="margin-top:50px;">Phasellus tristique, sapien quis mattis pellentesque, felis turpis placerat turpis, nec viverra
-                quam nisl at velit. Pellentesque iaculis convallis egestas.
+            <p style="margin-top:50px;">
+                Experiential events provide consumers with real-world opportunities to engage with a brand or product directly.
+                The idea is to create a tangible experience that will create a more valuable and memorable impact on your consumer. 
             </p>
             <p style="margin-top:40px;">
-                Nunc ut elit eget velit mollis  sodales. Ut non mauris ut ligula mattis consectetur. Aenan  augue arcu, rhonucu at nibh
-                nec, lacinina blandit nulla.
+                If you're looking to create something special for your customers that will be talked and thought about, then creating unique and engaging experiences that make an impression is absolutely an approach you may want to take.
             </p>
         </div>
     </div>
@@ -83,23 +84,21 @@
     <div class="line flex-row">
         <div class="card flex-row">
             <div class="card-image">
-                <img src="./images/cardImage1.jpg" alt="1">
+                <img src="./images/adsvideo.png" alt="1">
             </div>
             <div class="card-content">
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
-                    impedit enim deleniti ullam repellendus voluptatem omnis consectetur id fuga doloremque!
+                <h4>Video ads</h4>
+                <p>Animated commercial ads are short 10 to 30-second videos focused on promoting your company’s products and services. Unlike other types of marketing videos, great video ads don’t shy away from the fact that they are trying to sell something. They embrace it, finding new and innovative ways to carry your message, and being entertaining at the same time. 
                 </p>
             </div>
         </div>
         <div class="card flex-row">
             <div class="card-image">
-                <img src="./images/cardImage2.jpg" alt="1">
+                <img src="./images/tutorial.png" alt="1">
             </div>
             <div class="card-content">
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
-                    impedit enim deleniti ullam repellendus voluptatem omnis consectetur id fuga doloremque!
+                <h4>Tutorial Video</h4>
+                <p>Tutorial videos – also called How-to-Videos – revolved around a process, and how to accomplish it following a step-by-step format. Tutorial videos are instructional videos that walk viewers through the proper way to use your product or service.
                 </p>
             </div>
         </div>
@@ -107,36 +106,34 @@
     <div class="line flex-row">
         <div class="card flex-row">
             <div class="card-image">
-                <img src="./images/cardImage3.jpg" alt="1">
+                <img src="./images/explainervideo.png" alt="1">
             </div>
             <div class="card-content">
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
-                    impedit enim deleniti ullam repellendus voluptatem omnis consectetur id fuga doloremque!
+                <h4>Explainer Video</h4>
+                <p>Explainer videos are short animated or live action videos that communicate a message in a clear, concise, and memorable way. Animated explainer videos can be used to tell almost any kind of brand story.
+                    Some of the ways an explainer video are helpful are product launches, business explanation, storytelling, among others.
                 </p>
             </div>
         </div>
         <div class="card flex-row">
             <div class="card-image">
-                <img src="./images/cardImage4.png" alt="1">
+                <img src="./images/3d-video-1.png" alt="1">
             </div>
             <div class="card-content">
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
-                    impedit enim deleniti ullam repellendus voluptatem omnis consectetur id fuga doloremque!
+                <h4>3D Animation</h4>
+                <p>You’ll know it when you see it, but broadly it’s defined as animation created with software that lets you create and manipulate shapes and models that are fleshed out with textures and other effects. When you pit 2D animation vs. 3D animation, 3D will come out ahead in flexibility and sheer glossy good looks.
                 </p>
             </div>
         </div>
     </div>
 </div>
-<div class="info-section">
+<div class="info-section" id="if">
     <div class="our-company flex-row">
         <img src="./images/forCompany.jpg" alt="1">
         <div class="content">
             <h1>Our Company</h1>
-            <p>Lorem ipsum dolor sit, amet cLipsum dolor sit, amet consectetLorem ipsum dolor sit, amet cur adipisicing elit. Velit, voluptatum.</p>
-            <p>Lorem ipsum dolor sit, ametLorum dolor sit, amet cLorem ipsum dolor sitLorem ipsum dolor sit, amet c, amet c consecteturaaa adipisicing elit. Architecto minus 
-                laboriosam officiis nesciunt in accusamus quae facilis. Facere.</p>
+            <p>We exist to tell the stories of the pioneer, the adventurer, the person with a calling deep inside. We’re here for the bleeding-edgers, the ones who see opportunity while the world’s still looking in the rear-view mirror.</p>
+            <p>Because we’re those pioneers, too. We know what it means to come back down the mountain with a story to tell. To have gone where few others have, and return with something extraordinary, that the world needs to experience.</p>
             <button><a href="about.html" style="text-decoration: none; color: black;">Read More</a></button>    
         </div>
     </div>
@@ -146,114 +143,62 @@
             <button id="mission" class="">Mission</button>
         </div>
         <div class="infos">
-            <p>Ljbkjdfvkjdn dknbkjngkjnk
-                bjnkjnbkjkjpisicing elit.</p>
-            <p>Lorem ipsum dlorem6 Lorem ipsum dolor si consectetur adipisicing eliisicing elit.</p>
-            <p>Lorem Lorem ipsum dolor sit. adipisicing elit.</p>
+            <p>We’re a nimble San Francisco video production company helping brands and organizations push the world forward.</p>
+            <p>Through new ways of reaching your audience, and being an integral part of the process all the way from concept to consumer, we help create a different future. </p>
         </div>
     </div>
     
 </div>
 <div class="bottom">
 <div class="container">
-    <h1>Contact Us</h1>
+    <h1 id="contactus">Contact Us</h1>
     <form action="/action_page.php">
     <div class="row">
-      <div class="col-25">
-        <label for="name">Name</label>
-      </div>
       <div class="col-75">
-        <input type="text" id="name" name="name" placeholder="Your name.." required>
+        <input type="text" id="name" name="name" placeholder=" Name " required>
       </div>
     </div>
     <div class="row">
-      <div class="col-25">
-        <label for="email">Email</label>
-      </div>
       <div class="col-75">
-        <input type="text" id="email" name="email" placeholder=" Your Email.." required>
+        <input type="text" id="email" name="email" placeholder=" Email " required>
       </div>
     </div>
     <div class="row">
-        <div class="col-25">
-          <label for="number">Phone Number</label>
-        </div>
-        <div class="col-75">
-          <input type="number" id="number" name="number" placeholder="Your phone number.." required>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="date">Your birthday</label>
-        </div>
-        <div class="col-75">
-           <input type="date" id="date" name="date"
-            value="2000-12-22"
-            min="1930-01-01" max="2020-11-01"/ required>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="name">Your gender</label>
-        </div>
-        <div class="col-75">
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female" required>
-            <label for="female">Female</label><br>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="city">Your city</label>
-      </div>
       <div class="col-75">
-        <select id="city" name="city">
-            <option value="almaty">Almaty</option>
-    <option value="astana">Astana</option>
-    <option value="Kyzylorda">Kyzylorda</option>
-        </select>
+        <textarea id="message" name="message" placeholder=" Message " style="height:200px"></textarea>
       </div>
     </div>
     <div class="row">
-        <div class="col-25">
-          <label for="name">Which smartphones do you have?</label>
-        </div>
-        <div class="col-75">
-            <input type="checkbox" id="phone1" name="phone1" value="iPhone" required>
-  <label for="vehicle1">iPhone</label><br>
-  <input type="checkbox" id="phone2" name="samsung" value="Samsung">
-  <label for="vehicle2"> Samsung</label><br>
-  <input type="checkbox" id="vehicle3" name="oppo" value="Oppo">
-  <label for="vehicle3"> Oppo</label><br><br>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="message">Message </label>
-      </div>
-      <div class="col-75">
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
+      <input type="submit" value="Send it">
     </div>
     </form>
   </div>
 <div class="bottom-company">
-<img id="bottom-company-image" src="images/forCompany.jpg"/>
-<p id="companyText">Lorem ipsum dolor sit, ametLorum dolor sit, amet cLorem ipsum dolor sitLorem ipsum dolor sit, amet c, amet c consecteturaaa adipisicing elit.
-     Architecto minus laboriosam officiis nesciunt in accusamus quae facilis. Facere.</p>
+    <div id="ceo">
+<img id="bottom-company-image" src="images/ceo-2.jpeg"/>
+<div id="ceo-text">
+<p><strong>CEO</strong>: Shakhmardan Bazarbay</p><br>
+<address>Visit us at:<br>
+    www://proline.com <br>
+    Nazarbayev street , 248<br>
+    Almaty, Kazakhstan
+</address><br>
+<b>Our sponsor:</b> <bdi>شركة عربية</bdi><br>
+<strong>If u can read it in 3 seconds, u can get offer:</strong>
+<bdo dir="rtl"> If u can read it in 3 seconds, u can get offer</bdo>
 </div>
 </div>
-<hr>
+<p id="companyText">The emergence of social media and its popularity has evoked good marketing strategies to be used by every business to stay rock-solid in the competitive era. Out of various marketing strategies adopted by businesses, video marketing stands on top. </p>
+</div>
+</div>
+<div style="margin-bottom: 70px;">
+   <a href="#logo"><img id="upButton" src="./images/double-up-arrow.png"/></a> 
+</div>
 <div class="mapContainer">
     <div class="mapTitle">
         <p>Our Location</p>
     </div>
     <div id="map">
-
     </div>
 </div>
 <div id="flip">

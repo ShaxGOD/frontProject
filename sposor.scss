@@ -1,8 +1,0 @@
-@mixin title {
-  font-family: "Raleway", sans-serif;
-  color: gray;
-  font-size: 25px;
-}
-.title {
-  @include title();
-}

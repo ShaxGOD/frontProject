@@ -7,18 +7,16 @@ var paragraphs = document.querySelectorAll('.vision-mission .infos p');
 visionButton.addEventListener('click', function(){
     missionButton.className = '';
     visionButton.className = 'activeB';
-    paragraphs[0].innerHTML = 'Ljbkjdfvkjdn dknbkjngkjnkbjnkjnbkjkjpisicing elit.';
-    paragraphs[1].innerHTML = 'Lorem ipsum dlorem6 Lorem ipsum dolor si consectetur adipisicing eliisicing elit.';
-    paragraphs[2].innerHTML = 'Lorem Lorem ipsum dolor sit. adipisicing elit.';
+    paragraphs[0].innerHTML = 'We’re a nimble San Francisco video production company helping brands and organizations push the world forward.';
+    paragraphs[1].innerHTML = 'Through new ways of reaching your audience, and being an integral part of the process all the way from concept to consumer, we help create a different future.';
 });
 
 
 missionButton.addEventListener('click', function(){
     missionButton.className = 'activeB';
     visionButton.className = '';
-    paragraphs[0].innerHTML = 'Misionfvj';
-    paragraphs[1].innerHTML = 'birdenkeler zhasasn go';
-    paragraphs[2].innerHTML = 'biduuuuuuuuuuuuuuuuuuuuuuu';
+    paragraphs[0].innerHTML = 'Showing someone > telling someone. We are here to elevate the video industry and we’re taking you with us. These video solutions are becoming definable services in order to streamline the process and deliver more targeted videos.';
+    paragraphs[1].innerHTML = 'Our seven-part mini-course will show you practical ways to guide customers through every step from Awareness to Conversion—and beyond.';
 });
   function onClickImage() {
     location.href="https://bxfilms.tv/?utm_source=themanifest.com&utm_medium=referral&utm_campaign=video-production"
@@ -124,4 +122,10 @@ missionButton.addEventListener('click', function(){
       } else {
         navbar.classList.remove("sticky");
       }
+    }
+    function changeBackground(x) {
+      x.style.backgroundColor = "#ddd";
+    }
+    function removeBackground(x) {
+      x.style.backgroundColor="white";
     }

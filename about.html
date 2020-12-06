@@ -15,17 +15,12 @@
         <h1 class="title">Products of our PRO LINE company</h1>
     </div>
     <div>
-        <button><a href="index.html" style="text-decoration: none; color: black; background-color: chartreuse;">Back to main page</a></button>
+        <a href="index.html"><img id="back" src="./images/backButtom.png"></a>
     </div>
     <div class="projects-video">
         <div>
-        <h3 class="first-font">M&S Food</h3>
-        <button onclick="autoplay()" type="button">Autoplay</button> 
-  <button onclick="controls()">Controls</button>
-  <button onclick="loop()">Loop</button>
-  <button onclick="mute()">Mute</button>
-  <br><br>
-  <video id="video1"  width="200" height="200" controls autoplay loop muted>    
+        <h3 class="first-title">M&S Food</h3>
+  <video id="video1"  width="600" height="400" controls autoplay loop muted>    
     <source src="./video/advertisement.mp4" type="video/mp4">
     Your browser does not support HTML video.
   </video>
@@ -38,61 +33,10 @@
       </audio>
   </div>
   <div class="youtube-video">
-    <h3 class="first-font">NIKE</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WA4dDs0T7sM?autoplay=1&controls=1&loop=1">
+    <h3 class="second-title">NIKE</h3>
+    <iframe width="500" height="400" src="https://www.youtube.com/embed/WA4dDs0T7sM?autoplay=1&controls=1&loop=1">
     </iframe>
 </div>
-    </div>
-    <hr>
-    <div>
-        <object width="100%" height="300px" data="sponsors.html"></object>
-    </div>
-    <hr>
-    <div id="logo-div">
-<h1>Logo of our company</h1>
-<embed class="emb" src="./images/logo.png">
-    </div>
-    <script>
-          var myVideo = document.getElementById("video1"); 
-  function autoplay() { 
-    if (myVideo.autoplay) {
-      myVideo.autoplay=false; 
-      myVideo.load();
-    }
-    else  {
-      myVideo.autoplay = true;
-      myVideo.load();
-  }
-  } 
-  
-  function controls() { 
-      if(myVideo.controls == true) {
-          myVideo.controls = false;
-      }
-      else {
-          myVideo.controls = true;
-      }
-  } 
-  
-  function loop() { 
-      if(myVideo.loop) {
-          myVideo.loop == false;
-          myVideo.load();
-      }
-      else {
-          myVideo.loop = true;
-          myVideo.load();
-      }
-  } 
-  
-  function mute() { 
-      if(myVideo.muted == true) {
-          myVideo.muted=false;
-      }
-      else {
-          myVideo.muted = true;
-      }
-  } 
-    </script>
+    </div> 
 </body>
 </html>
